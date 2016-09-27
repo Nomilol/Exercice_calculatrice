@@ -13,6 +13,10 @@ function multiply(a,b){
 
 }
 
+function divide(a,b){
+	return a/b;
+}
+
 
 function calc(x,y){
 	var operation = process.argv[2];
@@ -32,6 +36,10 @@ function calc(x,y){
 
 	else if(operation === 'multiply'){
 		console.log(multiply(a,b));
+	}
+
+	else if(operation === 'divide'){
+		console.log(divide(a,b));
 	}
 
 	else{
